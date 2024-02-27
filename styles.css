@@ -1,12 +1,18 @@
-/* body {
-  min-width: 375px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 375px;
   height: 812px;
-  border: 1px solid blue;
-} */
+}
 
 .header-container {
   width: 375px;
   height: 64px;
+
   border: 1.5px solid #111;
   border-radius: 0 0 8px 8px;
   padding-left: 20px;
