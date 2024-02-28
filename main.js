@@ -1,17 +1,14 @@
-        //   <div class="hmob-burger-menu">
-        //   <a class="hburger-menu-link" href="">
-        //     <svg class="hburger-menu-icon is-visible" width="28" height="28">
-        //       <use href="../images/icons.svg#icon-burger"></use>
-        //     </svg>
 
-        //    <svg class="hclose-menu-icon" width="28" height="28">
-        //       <use href="../images/icons.svg#icon-x-close"></use>
-        //    </svg>
-        //   </a>
-          
-        //   </div>
+const headerMobMenu = document.querySelector('.hmob-burger-menu');
+const burgerBtn = document.querySelector('.hburger-menu-icon');
+const closeBtn = document.querySelector('.hclose-menu-icon');
+const hmodal = document.querySelector('.js-hmob-modal')
 
+headerMobMenu.addEventListener('click', onHeaderMobMenuClick);
 
-
-const hBurgerMenu = document.querySelector('.hburger-menu-link');
-console.log(hBurgerMenu);
+function onHeaderMobMenuClick(e) {
+    e.preventDefault();
+    burgerBtn.classList.toggle('is-visible');
+    closeBtn.classList.toggle('is-visible');
+    hmodal.classList.toggle('is-visible');
+}

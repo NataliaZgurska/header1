@@ -62,7 +62,8 @@ body {
 .hburger-menu-icon {
   display: none;
 }
-.hclose-menu-icon {
+.hclose-menu-icon,
+.hmobile-menu-wrap {
   display: none;
 }
 
