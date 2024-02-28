@@ -36,15 +36,25 @@
 
       <div class="hswitcher-user-wrap">
         <div class="hswitcher-burger-wrap">
-          <div class="switch-box">
-            <div class="switch-button" data-switch="false"></div>
+          <div class="hswitch-box">
+            <!-- <div class="switch-button" data-switch="false"></div> -->
+            <a class="hswitcher-link" href="">
+              <img class="hswitcher-img" src="../images/switcher.svg" alt="" />
+            </a>
           </div>
 
+          <div class="hmob-burger-menu">
           <a class="hburger-menu-link" href="">
-            <svg class="hburger-menu-icon" width="28" height="28">
+            <svg class="hburger-menu-icon is-visible" width="28" height="28">
               <use href="../images/icons.svg#icon-burger"></use>
             </svg>
+
+           <svg class="hclose-menu-icon" width="28" height="28">
+              <use href="../images/icons.svg#icon-x-close"></use>
+           </svg>
           </a>
+          
+          </div>
         </div>
 
         <!-- <div class="h-user">
@@ -55,5 +65,30 @@
         </div> -->
       </div>
     </div>
+
+    <!--******************** modal *******************-->
+    <div class="hmobile-menu-wrap js-hmob-modal">
+      <div class="hmobile-menu">
+       
+      <nav class="mobile__menu_nav">
+         <div class="hmodal-menu-wrap">
+        <div class="hmodal-home-btn">
+          <a href="">Home</a>
+        </div>
+
+        <div class="hmodal-shopping-wrap">
+ <a class="hmodal-shopping-link" href=""
+              >Shopping list
+              <svg class="hmodal-shopping-icon" width="20" height="20">
+                <use href="../images/icons.svg#icon-shopping-list"></use>
+              </svg>
+            </a>
+
+        </div>
+      </div>
+      </nav> 
+    </div> 
+
+
   </body>
 </html>
